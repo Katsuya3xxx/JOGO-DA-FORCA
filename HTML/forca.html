@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOGAR-JOGO DA FORCA</title>
+    <link rel="stylesheet" href="../static/css/forca.css">
+
+</head>
+<body>
+    <header>
+        <img src="../static/imagens/logo.png" alt="logo" class="img-fluid logo">
+    </header>
+
+    <div class="container mt-4">
+        <h1 class="text-center">JOGO DA FORCA</h1>
+        <div id="jogo" class="text-center">
+            <p id="dica" class="lead"></p>
+            <h3 id="palavra" class="display-4"></h3>
+            <div id="forca" style="position: relative; width: 150px; height: 250px; margin: auto;"></div>
+            <div class="from-group">
+                <input type="text" id="guess" maxlength="1" class="from-control" placeholder="Adivinhe uma letra">
+            </div>
+            <div class="botoes">
+                <button class="btn btn-primary mt-2" onclick="adivinharLetra()">Adivinhar</button>
+                <button class="btn btn-secondary mt-2" onclick="iniciarJogo()">Começar novo jogo</button>
+            </div>
+            <p id="status" class="mt-3"></p>
+            <p id="attempts"></p>
+        </div>
+    </div>
+<br>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://twitter.com/antonio" target="_blank" class="social-icon">
+                <img src="../static/imagens/instagram.svg" alt="INSTAGRAM">
+            </a>
+            <a href="https://github.com/Katsuya3xxx" target="_blank" class="social-icon">
+                <img src="../static/imagens/github.svg" alt="GITHUB">
+            </a>
+        </a>
+        <a href="https://github.com/Katsuya3xxx" target="_blank" class="social-icon">
+            <img src="../static/imagens/whatsapp-svgrepo-com.svg" alt="WHATSAPP">
+        </a>
+        </div>
+            <p>Aplicação WEB desenvolvida por ANTONIO KAYLLAN, aluno do SENAI.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="../static/js/jogo.js"></script>
+    <script src="../static/js/boneco.js"></script>
+    <script src="../static/js/perguntas.js"></script>
+</body>
+</html>
