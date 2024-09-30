@@ -121,6 +121,6 @@ footer {
 
 .header-container {
     display: flex;
-    justify-content: center; /* Centraliza a logo */
-    padding: 15px 0; /* Espaço em cima e embaixo da logo */
+    justify-content: center;
+    padding: 15px 0;
 }
